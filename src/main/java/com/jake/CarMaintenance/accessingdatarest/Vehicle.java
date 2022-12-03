@@ -14,48 +14,57 @@ import javax.persistence.Id;
 
         private String make;
         private String model;
-        private int year;
+        private int vehicleYear;
         private int mileage;
         private String maintenancePerformed;
 
 
-        public int getYear() {
-            return year;
-        }
+    public long getId() {
+        return this.id;
+    }
 
-        public void setYear(int year) {
-            this.year = year;
-        }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-        public int getMileage() {
-            return mileage;
-        }
+    public String getMake() {
+        return this.make;
+    }
 
-        public void setMileage(int mileage) {
-            this.mileage = mileage;
-        }
+    public void setMake(String make) {
+        this.make = make;
+    }
 
-        public String getMaintenancePerformed() {
-            return maintenancePerformed;
-        }
+    public String getModel() {
+        return this.model;
+    }
 
-        public void setMaintenancePerformed(String maintenancePerformed) {
-            this.maintenancePerformed = maintenancePerformed;
-        }
+    public void setModel(String model) {
+        this.model = model;
+    }
 
-        public String getMake() {
-            return make;
-        }
+    public String getMaintenancePerformed() {
+        return this.maintenancePerformed;
+    }
 
-        public void setMake(String firstName) {
-            this.make = firstName;
-        }
+    public void setMaintenancePerformed(String maintenancePerformed) {
+        this.maintenancePerformed = maintenancePerformed;
+    }
 
-        public String getModel() {
-            return model;
-        }
+    public int getVehicleYear() {
+        return this.vehicleYear;
+    }
 
-        public void setModel(String lastName) {
-            this.model = lastName;
-        }
+    public void setVehicleYear(int vehicleYear) {
+        this.vehicleYear = vehicleYear;
+    }
+
+    public int getMileage() {
+        return this.mileage;
+    }
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+    
 }
